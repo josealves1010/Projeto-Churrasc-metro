@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Churrascómetro</title>
+
+</head>
+
+<body>
+
+    <body>
+
+        <div class="container">
+            <img src="./img/carne[.png" alt="Logo Churrascómetro" class="logo-app">
+            <p>Calcule a quantidade ideal para o seu churrasco!</p>
+            <p class="lembrete-consumo">💡 Base de cálculo para bebidas: 400ml por adulto e 300ml por criança.</p>
+
+            <div class="input-group">
+                <label for="homens">Homens:</label>
+                <input type="number" id="homens" value="0" min="0">
+            </div>
+
+            <div class="input-group">
+                <label for="mulheres">Mulheres:</label>
+                <input type="number" id="mulheres" value="0" min="0">
+            </div>
+
+            <div class="input-group">
+                <label for="criancas">Crianças:</label>
+                <input type="number" id="criancas" value="0" min="0">
+            </div>
+
+            <button id="btn-calcular">Calcular Quantidades</button>
+
+            <div id="resultado"></div>
+        </div>
+
+
+    </body>
+    <script src="script.js"></script>
+</body>
+
+</html>

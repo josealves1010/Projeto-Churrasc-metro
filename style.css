@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. O CORPO DA PÁGINA: Define o fundo e centraliza o conteúdo */
+body {
+    background-color: #f7f9fc; /* Um cinza bem clarinho e moderno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Letra limpa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Faz o conteúdo ficar centralizado verticalmente na tela toda */
+    padding: 20px;
+}
+
+/* 3. O CARD CONTAINER: Cria uma "caixa" branca charmosa para o app */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px; /* Pontas arredondadas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra suave no fundo */
+    width: 100%;
+    max-width: 400px; /* Largura máxima para não ficar gigante no computador */
+    text-align: center;
+}
+
+
+.logo-app {
+    width: 170px; /* Altere esse número se quiser a logo maior ou menor */
+    height: auto; /* Mantém a proporção da imagem para não amassar */
+    margin-bottom: 15px; /* Dá um espaço entre a logo e o texto de baixo */
+}
+
+p {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* 4. OS CAMPOS DE ENTRADA (INPUTS): Organização das caixinhas */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+input {
+    width: 80px;
+    padding: 8px 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2d3748;
+    outline: none;
+    transition: border-color 0.2s; /* Efeito suave ao clicar */
+}
+
+/* Quando o usuário clica para digitar, a borda fica azul */
+input:focus {
+    border-color: #3182ce;
+}
+
+/* 5. O BOTÃO: Estilização do botão de ação */
+button {
+    width: 100%; /* O botão ocupa a largura toda do card */
+    background-color: #ff4757; /* Cor vermelha/coral */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+/* Efeito quando passa o mouse no botão */
+button:hover {
+    background-color: #e84118; /* Vermelho um pouco mais escuro */
+}
+
+/* 6. O PAINEL DE RESULTADO: Onde o JavaScript joga o texto */
+#resultado {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px dashed #e2e8f0; /* Linha tracejada para separar */
+}
+
+#resultado p {
+    color: #2d3748;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#resultado strong {
+    color: #ff4757; /* Destaca o peso da carne em vermelho */
+    font-size: 18px;
+}
+
+/* Estilo para o lembrete de consumo de bebidas */
+.lembrete-consumo {
+    font-size: 12px; /* Letra menor que o parágrafo normal */
+    color: #a0aec0; /* Um cinza mais claro e discreto */
+    margin-top: -15px; /* Puxa o texto um pouco para cima, para colar na instrução */
+    margin-bottom: 25px; /* Mantém o espaço para as caixinhas de baixo */
+    font-style: italic; /* Deixa o texto em itálico */
+}
